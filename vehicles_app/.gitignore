@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+.env/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Archivos ocultos y de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de VSCode
+.vscode/
+
+# Archivos de salida o temporales
+*.log
+*.tmp
