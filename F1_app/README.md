@@ -1,6 +1,6 @@
 # F1 Drivers Performance Dashboard 🏎️📊
 
-🔗 **[View the live app on Render →](https://software-dev-proyect-f1-app.onrender.com)** _(Update this with the actual link once deployed)_
+🔗 **[View the live app on Render →](https://software-dev-proyect-f1-app.onrender.com)** 
 
 This project is a personal initiative focused on building a fully functional and interactive web application using **Streamlit**, powered by **real Formula 1 data**. It allows users to visually explore the performance of top F1 drivers from the year 2000 onwards.
 
