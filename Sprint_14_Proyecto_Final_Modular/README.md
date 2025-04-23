@@ -9,8 +9,88 @@ El análisis se desarrolló inicialmente en un Jupyter Notebook (`.ipynb`), pero
 
 ## Estructura inicial del proyecto
 
-- **`load_data.py`**: Carga los datasets crudos desde archivos `.csv` y los convierte en DataFrames para análisis posteriores.
-- **`preprocessing.py`**: Contiene funciones para limpiar y transformar los datos, incluyendo el formateo de fechas, creación de columnas clave (`wait_time`, `call_duration`), y tratamiento de outliers. Genera los DataFrames `df_calls`, `df_clients`, `df_calls_no_outliers`, entre otros.
+    Sprint_14_Proyecto_Final_Modular/
+
+├── data/ # Datasets u outputs opcionales
+├── docs/ # Reporte en Markdown, gráficos (próximamente)
+│ └── report.md
+├── notebooks/ # Notebook original del proyecto
+├── scripts/ # Scripts modulares por etapa
+│ ├── eda/ # EDA segmentado por tema
+│ ├── identificacion_ineficaces/ # Clasificación de desempeño
+│ ├── load_data.py
+│ ├── preprocessing.py
+│ ├── pruebas_hipotesis.py
+│ └── visualizaciones.py
+├── run_pipeline.py # Pipeline maestro que orquesta todo
+├── requirements.txt
+└── README.md
+
+---
+
+## ¿Qué hace el pipeline?
+
+run_pipeline.py ejecuta toda la cadena de análisis:
+
+Carga de datos desde URLs públicas
+
+Preprocesamiento y limpieza de nulos y duplicados
+
+Generación de columnas clave como duración y espera
+
+EDA modular: outliers, tiempos, planes, pérdidas
+
+Cálculo de métricas por operador
+
+Clasificación por eficiencia (basado en umbrales dinámicos)
+
+Visualizaciones exploratorias y ejecutivas
+
+Pruebas de hipótesis para validar insights
+
+Reporte automático guardado como docs/report.md
+
+---
+
+## ¿Cómo correrlo?
+
+### Clona el repositorio y entra al directorio:
+
+git clone <https://github.com/Jack-D26/Data_Analytics_Bootcamp_Portfolio>
+
+cd Sprint_14_Proyecto_Final_Modular
+
+### Crea un entorno virtual (opcional):
+
+python -m venv venv
+source venv/bin/activate # Mac/Linux
+venv\Scripts\activate # Windows
+
+### Instala las dependencias:
+
+pip install -r requirements.txt
+
+### Ejecuta el pipeline:
+
+python run_pipeline.py
+
+---
+
+## Salida del pipeline
+
+🖥️ Imprime estadísticas, resultados y pruebas al terminal
+
+📝 Genera automáticamente un reporte en docs/report.md
+
+📊 Muestra visualizaciones en pantalla (se pueden guardar opcionalmente)
+
+📁 (Próximamente) Exportación de CSVs y gráficos a /data y /docs/figures
+
+---
+
+## Créditos
+
+Desarrollado por [Joako] en el marco del proyecto final de Sprint 14, con el soporte técnico de Data_Partner.
 
 ---
 
