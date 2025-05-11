@@ -134,5 +134,4 @@ def main():
     print(f"📄 Reporte guardado en: {report_path}")
 
 
-if __name__ == "__main__":
-    main()
+main()

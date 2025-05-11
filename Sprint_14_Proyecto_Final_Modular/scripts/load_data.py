@@ -19,13 +19,3 @@ def load_calls_data():
     """
     url_calls = "https://practicum-content.s3.us-west-1.amazonaws.com/datasets/telecom_dataset_us.csv"
     return pd.read_csv(url_calls)
-
-
-if __name__ == "__main__":
-    df_clients = load_clients_data()
-    df_calls = load_calls_data()
-
-    print("Clientes:")
-    print(df_clients.head())
-    print("\nLlamadas:")
-    print(df_calls.head())
