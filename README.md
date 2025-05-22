@@ -28,5 +28,3 @@ El repositorio incluye los siguientes bloques principales:
 Este portafolio representa el conjunto completo de entregables realizados durante el bootcamp de análisis de datos. No se planea agregar nuevos proyectos personales a este repositorio. Las futuras iniciativas y proyectos profesionales tendrán su propio espacio en un repositorio distinto.
 
 ---
-
-Para una descripción más detallada de cada proyecto, consulta los `README.md` individuales dentro de cada carpeta de proyecto.
